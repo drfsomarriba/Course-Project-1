@@ -1,0 +1,13 @@
+# plot2.R
+# Purpose: Plot 2 - Global Active Power over time (Feb 1-2, 2007)
+
+source("load_data.R")
+
+png("plot2.png", width = 480, height = 480)
+
+plot(sub$DateTime, sub$Global_active_power,
+     type = "l",
+     xlab = "",
+     ylab = "Global Active Power (kilowatts)")
+
+dev.off()
